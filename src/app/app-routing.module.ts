@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WidgetComponent } from './widget/widget.component';
 import { HomeComponent } from './home/home.component';
+import {WidgetDetailComponent} from './widget-detail/widget-detail.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
   {
     path: 'widgets',
     component: WidgetComponent
+  },
+  {
+    path: 'widgets/:id',
+    component: WidgetDetailComponent
   }
 ];
 
